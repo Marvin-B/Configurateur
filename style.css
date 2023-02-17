@@ -1,0 +1,349 @@
+/*
+
+Theme Name:     Groupe écho
+
+Description:    Agences de communication - Angers, Troyes, Cholet
+
+Author:         Maryline Cesbron
+
+Template:       Divi
+
+Version:        3.0
+
+*/
+
+/*
+
+
+
+Rajoutez vos règles de CSS personnalisé ci-dessous
+
+
+
+*/
+
+.centrer-verticalement {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+
+
+    /* Et les déclinaisons avec préfixes pour obtenir un résultat homogène sur les divers navigateurs  */
+
+    display: -webkit-box;
+
+    display: -webkit-flex;
+
+    display: -moz-box;
+
+    display: -ms-flexbox;
+
+    -webkit-box-orient: vertical;
+
+    -webkit-box-direction: normal;
+
+    -webkit-flex-direction: column;
+
+    -moz-box-orient: vertical;
+
+    -moz-box-direction: normal;
+
+    -ms-flex-direction: column;
+
+    -webkit-box-pack: center;
+
+    -webkit-justify-content: center;
+
+    -moz-box-pack: center;
+
+    -ms-flex-pack: center;
+
+}
+
+
+
+iframe#v3d_iframe {
+
+    position: fixed;
+
+    width: 85%;
+
+    height: 89vh;
+
+    top: 11vh;
+
+    left: 0;
+
+}
+
+
+
+footer {
+
+    display: none;
+
+}
+
+
+
+header {
+
+    position: fixed;
+
+    width: 100vw;
+
+    top: 0;
+
+    left: 0;
+
+    height: 11vh;
+
+    z-index: 2;
+
+}
+
+
+
+header div {
+
+    height: 100%;
+
+    /*overflow: hidden;*/
+
+}
+
+
+
+header span{
+
+    height:100%;
+
+    width: 100%;
+
+}
+
+
+
+header nav ul#menu-header{
+
+    display: flex;
+
+    align-items: center!important;
+
+}
+
+
+
+header span img{
+
+    height:100%!important;
+
+    width: 100%!important;
+
+    object-fit: cover;
+
+}
+
+
+
+div#et-main-area {
+
+    padding-top: 11vh;
+
+}
+
+
+
+/* Configurateur 3D */
+
+
+
+canvas#application-canvas {
+
+    max-width: 60%;
+
+    cursor: grab;
+
+}
+
+
+
+canvas#application-canvas:active {
+
+    cursor: grabbing;
+
+}
+
+
+
+
+
+#aside-configurateur {
+
+    max-width: 40%;
+
+    left: 60%;
+
+    top: 10vh;
+
+    position: fixed;
+
+    padding: 20px 10px;
+
+}
+
+
+
+#aside-configurateur h1 {
+
+    text-transform: uppercase;
+
+    font-size: 45px;
+
+}
+
+
+
+
+
+#aside-configurateur div {
+
+    padding: 15px;
+
+    background-color: #526c72;
+
+}
+
+
+
+#aside-configurateur h2 {
+
+    padding: 0;
+
+}
+
+
+
+#aside-configurateur h3 {
+
+    color: skyblue;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid skyblue;
+
+    margin-bottom: 40pw;
+
+    font-size: 18px;
+
+}
+
+
+
+#aside-configurateur h1,
+
+#aside-configurateur h2,
+
+#aside-configurateur h3 {
+
+    text-align: center;
+
+}
+
+
+
+#aside-configurateur h1,
+
+#aside-configurateur h2,
+
+#aside-configurateur p {
+
+    color: #fff;
+
+}
+
+
+
+#aside-configurateur p {
+
+    font-size: 22px;
+
+}
+
+
+
+#aside-configurateur span.button-config {
+
+    width: 40px;
+
+    height: 40px;
+
+    display: inline-block;
+
+    margin: 0 9px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    opacity: 0.7;
+
+}
+
+
+
+#aside-configurateur span.button-config:hover {
+
+    opacity: 1;
+
+}
+
+
+
+#aside-configurateur span#jaune {
+
+    background-color: yellow;
+
+}
+
+
+
+#aside-configurateur span#rouge {
+
+    background-color: red;
+
+}
+
+
+
+#aside-configurateur span#noir {
+
+    background-color: black;
+
+}
+
+
+
+
+
+/* --------- import via iframe de playcanvas - 081222 --------------- */
+
+
+
+iframe#configurateur{
+
+    position: fixed;
+
+    top: 11vh; /* hauteur du menu */
+
+    height: 89vh;
+
+    width: 100%;
+
+    left: 0;
+
+}
